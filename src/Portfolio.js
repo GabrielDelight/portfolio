@@ -574,7 +574,7 @@ export default function Portfolio() {
               className="fade-in on_mobile_view"
             >
               <img
-                src="/me.jpeg"
+                src="./me.jpeg"
                 alt="Gabriel Delight"
                 style={{
                   width: "100%",
@@ -692,7 +692,7 @@ export default function Portfolio() {
             className="fade-in image_wrapper"
           >
             <img
-              src="/me.jpeg"
+              src="./me.jpeg"
               alt="Gabriel Delight"
               style={{
                 width: "100%",
