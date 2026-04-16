@@ -1,0 +1,515 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all ease .2s;
+  /* border:  solid red; */
+}
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+@font-face {
+  font-family: 'HelveticaBold';
+  src: url('../public/Helvetica/Helvetica-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Helvetica_';
+  src: url('../public//Helvetica/Helvetica.ttf') format('truetype');
+}
+
+
+
+body {
+  font-family: 'Helvetica_';
+  background-color: #000000 !important;
+  transition: all ease .5s;
+  scroll-behavior: smooth;
+  color: white;
+  /* max-width: 75% !important;
+  margin: auto; */
+  /* background: url("https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?auto=compress&cs=tinysrgb&w=800"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+@media screen and (min-width: 1300px) {
+  body {
+     max-width: 1300px;
+     margin: 0 auto;
+  }
+}
+
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: unset;
+}
+
+i {
+  cursor: pointer;
+  color: #8b8488;
+}
+
+svg {
+  cursor: pointer;
+}
+
+img {
+  object-fit: cover;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer !important;
+  outline: none;
+  border: none;
+  background-color: unset;
+}
+
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+  border-radius: 20px;
+  background-color: rgb(135, 135, 135);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: unset;
+  border-radius: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(227, 227, 227);
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  ::-webkit-scrollbar-thumb {
+    visibility: hidden;
+  }
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 99, 99, 0.4);
+}
+
+
+/* Prevent the app from zooming on mobile devices */
+:root {
+  touch-action: pan-x pan-y;
+  height: 100%
+}
+
+/* preventing IOS mobile from zooming */
+@media screen and (max-width: 767px) {
+
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"],
+  input {
+    font-size: 16px !important;
+    font-family: 'Helvetica_', Arial, Helvetica, sans-serif;
+
+  }
+}
+
+
+textarea {
+  font-size: 16px;
+  font-family: 'Helvetica_', Arial, Helvetica, sans-serif;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+div {
+  /* font-size: 14px; */
+  word-wrap: break-word;
+  word-break: break-word;
+  font-family: 'Helvetica_', Arial, Helvetica, sans-serif;
+}
+
+p {
+  /* font-size: 14px; */
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+
+.centered {
+  text-align: center;
+}
+
+
+.cancel-btn {
+  border: 2px solid cornflowerblue;
+  background-color: white;
+  color: cornflowerblue;
+  font-weight: bold;
+  border-radius: 20px;
+
+}
+
+
+.confirm-btn {
+  background-color: cornflowerblue;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+
+i.rotate_plus,
+#rotate_plus {
+  transform: rotate(314deg);
+  display: inline-block;
+}
+
+
+
+.bold {
+  font-weight: bolder;
+  cursor: pointer !important;
+}
+
+.bolder {
+  font-weight: 900 !important;
+  cursor: pointer !important;
+}
+
+.smaller {
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+
+/* sticky aside firstchild child div */
+.stick_aside_div {
+  position: sticky;
+  top: 13px;
+  /* background-color: pink; */
+}
+
+.white-color {
+  color: #bbb !important;
+}
+
+#global_relative {
+  position: relative !important;
+}
+
+video {
+  border: none;
+  outline: none;
+  object-fit: cover;
+}
+
+.verified {
+  color: cornflowerblue;
+}
+
+.flex_username__and__user__name__date {
+  display: flex;
+  align-items: center;
+}
+
+.flex_username__and__user__name__date * {
+  margin-right: 3px;
+}
+
+.flex_username__and__user__name__date h4 {
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: bold;
+  color: #414141;
+}
+
+.flex_username__and__user__name__date h4:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.flex_username__and__user__name__date i svg {
+  margin-bottom: -5px;
+  font-size: 24px;
+  color: cornflowerblue;
+}
+
+.flex_username__and__user__name__date p {
+  color: rgb(85, 85, 85);
+}
+
+.urlifyHashAndLink {
+  font-weight: 900;
+  color: cornflowerblue;
+}
+
+.color-black {
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Deleetiong animation  */
+.toggle_delete {
+  /* transition: all ease-in .5s; */
+  height: 200px;
+  overflow: hidden;
+  animation: deletefade .4s ease forwards;
+}
+
+@keyframes deletefade {
+  from {
+    height: 200px;
+  }
+
+  to {
+    height: 0px;
+  }
+}
+
+.marginTopAndBottom {
+  margin: 7px 0px;
+}
+
+.padding_px_10 {
+  padding: 10px;
+}
+
+.linear_gradient {
+  background: rgb(91, 91, 91);
+  background: linear-gradient(173deg, rgba(91, 91, 91, 1) 5%, rgba(244, 244, 255, 0.9416141456582633) 100%, rgba(71, 71, 71, 0.7595413165266106) 100%);
+}
+
+.white_background {
+  background-color: #fff;
+}
+
+
+
+
+/* Round images */
+.round_image_wrapper {
+  margin-right: 1rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+
+
+
+
+
+
+
+/* Video player */
+/* ******************************************* */
+/* ******************************************* */
+
+
+
+/* Important this is for making the with to 100% */
+ .video-js {
+  width: 100% !important;
+  max-height: 100vh;
+  /* max-height: 80vh;
+  min-height: 300px; */
+}
+
+.video-js video {
+  
+}
+
+.vjs-poster {
+  width: 100% !important;
+  /* background: rgb(91, 91, 91) !important;
+    background: linear-gradient(173deg, rgba(91, 91, 91, 1) 5%, rgba(244, 244, 255, 0.9416141456582633) 100%, rgba(71, 71, 71, 0.7595413165266106) 100%) !important; */
+}
+/*
+@media (max-width: 600px) {
+  .video-js {
+    max-height: 85vh;
+  }
+} */
+
+
+
+
+/* The play button */
+.video-js .vjs-big-play-button {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50% !important;
+}
+
+/* progress bar */
+.video-js .vjs-play-progress {
+  background-color: hotpink !important;
+}
+
+/* Volume background color*/
+/* .video-js .vjs-play-progress {
+
+} */
+
+
+/* ******************************************* */
+/* ******************************************* */
+
+
+
+
+
+
+/* Dark mode  */
+/* Lighjt */
+.light_theme_dark_class_div {
+  background-color: #181a1b !important;
+}
+
+
+
+
+/* Dak  mode controller*/
+.dark_theme_div {
+  background-color: black !important;
+  transition: all ease .5s;
+}
+
+.tranparent_theme {
+  background-color: rgb(0, 0, 0, 0.5) !important;
+  transition: all ease .5s;
+}
+
+.dark_theme_div *,
+.light_theme_dark_class_div * {
+  border-color: rgb(86, 86, 86) !important;
+}
+
+
+/* Theming */
+/* text  tags  */
+.light_theme_dark_class_div p,
+.dark_theme_div p,
+.light_theme_dark_class_div h1,
+.dark_theme_div h1,
+.light_theme_dark_class_div h2,
+.dark_theme_div h2,
+.light_theme_dark_class_div h3,
+.dark_theme_div h3,
+.light_theme_dark_class_div h4,
+.dark_theme_div h4,
+.light_theme_dark_class_div h5,
+.dark_theme_div h5,
+.light_theme_dark_class_div span,
+.dark_theme_div span,
+.light_theme_dark_class_div i,
+.dark_theme_div i {
+  color: #cecbc6 !important;
+  transition: all ease .5s;
+}
+
+
+
+
+
+.light_theme_dark_class_div input,
+.dark_theme_div input,
+.light_theme_dark_class_div textarea,
+.dark_theme_div textarea {
+  background-color: #303435 !important;
+  color: #cecbc6 !important;
+  transition: all ease .5s;
+}
+
+
+/* Slider  */
+.rsis-image {
+  background-size: cover !important;
+  width: 100% !important;
+  /* height: 100%; */
+}
+
+.slider_container {
+  width: 100%;
+  background-color: black;
+  position: relative;
+}
+
+
+
+.active_comment_div {
+  padding: 10px 0px;
+  /* border: 2px solid cornflowerblue !important; */
+  background-color: #c6c6c63d;
+  border-radius: 10px;
+}
+
+.active_reply_div {
+  border: 2px solid cornflowerblue !important;
+  border-color: cornflowerblue !important;
+  border-radius: 7px;
+}
+
+/* Range colo for vn */
+.vn_range_seeker {
+  background-color: white !important;
+}
+
+.hr_line {
+  background-color: #3d4be1;
+  height: 1px;
+  border: none;
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+
+.hideOnDesktop {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .hideOnDesktop {
+    display: block;
+  }
+}
